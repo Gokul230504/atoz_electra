@@ -30,7 +30,8 @@ const HomeComp = () => {
             </section>
             <section>
                 <h1>About us</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio dolores, consectetur illo expedita molestias non eos quaerat unde optio modi commodi maiores cum adipisci quo soluta temporibus deserunt ut!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsam distinctio dolores, consectetur illo expedita molestias non eos quaerat unde optio modi commodi maiores <br/>
+                 cum adipisci quo soluta temporibus deserunt ut!</p>
             </section>
             <section>
                 <h1>Reviews</h1>

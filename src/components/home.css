@@ -23,6 +23,9 @@
 
 .navbar-left {
   float: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 .navbar-right {
@@ -39,7 +42,7 @@
 
 /* General styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
 }
@@ -51,6 +54,12 @@ section {
 
 h1 {
   color: #333;
+}
+h2{
+  color: #333;
+}
+h3{
+  color:cadetblue;
 }
 
 p {
@@ -110,21 +119,6 @@ footer {
   width: 20px;
   height: 20px;
 }
-/* HomeComp.css */
-
-/* Navigation bar styling */
-/* ... (existing styles) */
-
-/* General styling */
-/* ... (existing styles) */
-
-/* Reviews styling */
-/* ... (existing styles) */
-
-/* Footer styling */
-/* ... (existing styles) */
-
-/* Login form styling */
 .login-form {
   position: fixed;
   top: 0;

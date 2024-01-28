@@ -1,0 +1,9 @@
+useRef:
+-> Referencing something
+-> To retrive previous value
+-> To avoid infinite loops
+Syntax:
+      const <name>=useRef(0);
+      {
+        current:0;
+      }   <div>{<name>.current}</div>

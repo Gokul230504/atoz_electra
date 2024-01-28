@@ -12,9 +12,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* App.css or index.css */
+
+
+
+/* ... other global styles if needed ... */
+
 
 .App-header {
-  background-color:white;
+  background-color:whitesmoke;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +28,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .App-link {
