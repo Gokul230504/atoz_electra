@@ -9,6 +9,6 @@ const RefeRence=()=>{
    return(
     <><h1>Type your reviews here..</h1>
     <input type="text" onChange={(event)=>{Update(event.target.value)}}/>
-    <h2>Your review is</h2><h3><box type="text">{batchSize}</box></h3><h2>Check if you typed is correct hence go nd update</h2><h3>{prev.current}</h3><br /><br /><br /><br /></>)
+    <h2>Your review is</h2><h3>{batchSize}</h3><h2>Check if you typed is correct hence go nd update</h2><h3>{prev.current}</h3></>)
 }
 export default RefeRence;

@@ -2,12 +2,12 @@ import React,{useMemo, useState} from "react";
 const Memo=()=>{
     const [number,UpdateNumber]=useState(0);
     const [dark, updatetheme]=useState(false);
-    const doubleNumber = doubleNumberSlow(number);
-    const doubleNumberSlow=(num)=>{
-        for(let i=0;i<1000000000000000;i++)
-        {
-         return num*2;
-        }
+    const doubleNumber = useMemo(()=>{
+        return doubleNumberSlow(number)
+    },[number])
+    function doubleNumberSlow(number){
+         return number*2;
+        
     }
     const Theme = useMemo(()=>{
         return {
@@ -16,10 +16,10 @@ const Memo=()=>{
     }
     },[dark])
     return(
-        <><h1>Number type{number} </h1>
-        <input type="number" value={number} onClick></input>
+        <><h1>Number type {number} </h1>
+        <input type="number" value={number} onChange></input> <br />
         <button onClick={()=>{updatetheme(dark =>!dark)}}>Change Theme</button>
-        <h2 style={Theme}>The doubled number is{doubleNumber}</h2>
+        <h2 style={Theme}>The doubled number is {doubleNumber} <br /><br /><br /></h2>
         </>
     )
 }

@@ -1,0 +1,7 @@
+useMemo:
+->memory,memozation
+->used for memozation(storing it)
+->used when your perfomance degrades
+->cant use for all the components
+->it is entirely based on caching(cache memory)
+
