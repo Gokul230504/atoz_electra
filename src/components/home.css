@@ -1,4 +1,14 @@
-/* HomeComp.css */
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('th.jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Navigation bar styling */
 .navbar {
@@ -40,30 +50,52 @@
   color: black;
 }
 
-/* General styling */
-body {
-  font-family:'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
+.learnings-dropdown {
+  position: relative;
+  display: inline-block;
 }
 
+.learnings-dropdown:hover .learnings-dropdown-content {
+  display: block;
+}
+
+.learnings-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.learnings-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.learnings-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* General styling */
 section {
   padding: 20px;
   margin-bottom: 30px;
 }
 
-h1 {
-  color: #333;
+h1
+{
+  color: cadetblue;
 }
-h2{
-  color: #333;
-}
-h3{
-  color:cadetblue;
-}
-
+h2,h3{color:black}
 p {
-  color: #666;
+  color: black;
+  font-weight: bolder;
 }
 
 /* Reviews styling */
@@ -102,7 +134,6 @@ footer {
 
 .footer-left {
   flex-grow: 1;
-  
 }
 
 .footer-right {
@@ -119,6 +150,8 @@ footer {
   width: 20px;
   height: 20px;
 }
+
+/* Login form styling */
 .login-form {
   position: fixed;
   top: 0;
@@ -152,32 +185,6 @@ footer {
   cursor: pointer;
   border: none;
 }
-/* HomeComp.css */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-image: url('th.jpg'); /* Replace with the path to your background image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Navigation bar styling */
-/* ... (existing styles) */
-
-/* General styling */
-/* ... (existing styles) */
-
-/* Reviews styling */
-/* ... (existing styles) */
-
-/* Footer styling */
-/* ... (existing styles) */
-
-/* Login form styling */
-/* ... (existing styles) */
 
 .main-section {
   background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to improve readability */
@@ -194,5 +201,37 @@ body {
 
 .login-link:hover {
   text-decoration: underline;
+}
+/* HomeComp.css */
+
+/* HomeComp.css */
+
+/* HomeComp.css */
+
+.animation-container {
+  text-align: center;
+  margin-top: 100px; /* Adjust as needed for positioning */
+}
+
+@keyframes cursorBlink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+.blinking-cursor {
+  display: inline-block;
+  animation: cursorBlink 1s infinite; /* Adjust the duration as needed */
+  color: #333; /* Adjust the cursor color */
+}
+
+
+
+h1 {
+  animation: textAnimation 3s infinite; /* Adjust the duration as needed */
+  display: inline-block;
 }
 
